@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/richAndMortyCharactersFragment">
+
+    <fragment
+        android:id="@+id/richAndMortyCharactersFragment"
+        android:name="tech.danielwaiguru.androidarchitecturecomponents.ui.list.RichAndMortyCharactersFragment"
+        android:label="fragment_rich_and_morty_characters"
+        tools:layout="@layout/fragment_rich_and_morty_characters" >
+        <action
+            android:id="@+id/action_richAndMortyCharactersFragment_to_rickAndMortyCharactersDetailsFragment"
+            app:destination="@id/rickAndMortyCharactersDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rickAndMortyCharactersDetailsFragment"
+        android:name="tech.danielwaiguru.androidarchitecturecomponents.ui.details.RickAndMortyCharactersDetailsFragment"
+        android:label="fragment_rick_and_morty_characters_details"
+        tools:layout="@layout/fragment_rick_and_morty_characters_details" />
+</navigation>
