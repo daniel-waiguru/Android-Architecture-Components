@@ -1,7 +1,8 @@
-package tech.danielwaiguru.androidarchitecturecomponents
+package tech.danielwaiguru.androidarchitecturecomponents.ui.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import tech.danielwaiguru.androidarchitecturecomponents.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
