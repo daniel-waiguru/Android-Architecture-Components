@@ -16,7 +16,7 @@ The app use Offline first principle
 ### Architecture used
 The app is based on MVVM architecture and Repository pattern
 
-![](/images/mvvm.png)
+![](images/mvvm.png)
 
 ### Open source Libraries used
 * Dagger Hilt for dependency injection
