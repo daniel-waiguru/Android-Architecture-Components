@@ -1,4 +1,4 @@
-package tech.danielwaiguru.androidarchitecturecomponents
+package tech.danielwaiguru.androidarchitecturecomponents.database
 
 import androidx.lifecycle.LiveData
 import androidx.room.*

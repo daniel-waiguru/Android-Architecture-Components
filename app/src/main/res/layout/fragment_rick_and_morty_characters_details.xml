@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
+    android:padding="8dp"
     tools:context=".ui.details.RickAndMortyCharactersDetailsFragment">
 
     <androidx.cardview.widget.CardView
@@ -28,10 +28,9 @@
                 />
             <ImageView
                 android:id="@+id/characterImage"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 style="@style/TextAppearance.AppCompat.Medium"
-                android:layout_marginTop="@dimen/margin_top"
                 android:contentDescription="@string/character_image" />
             <TextView
                 android:text="@string/name"
@@ -45,12 +44,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 style="@style/TextAppearance.AppCompat.Medium"
-                android:layout_marginTop="@dimen/margin_top"
+                android:layout_marginTop="@dimen/margin_small"
                 />
             <TextView
                 android:text="@string/status"
                 style="@style/TextAppearance.AppCompat.Large"
-                android:layout_margin="@dimen/margin"
+                android:layout_margin="@dimen/margin_small"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 />
@@ -59,7 +58,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 style="@style/TextAppearance.AppCompat.Medium"
-                android:layout_marginTop="@dimen/margin_top"
+                android:layout_marginTop="@dimen/margin"
                 />
             <TextView
                 android:text="@string/species"
@@ -73,7 +72,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 style="@style/TextAppearance.AppCompat.Medium"
-                android:layout_marginTop="@dimen/margin_top"
+                android:layout_marginTop="@dimen/margin"
                 />
             <TextView
                 android:text="@string/gender"
@@ -87,7 +86,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 style="@style/TextAppearance.AppCompat.Medium"
-                android:layout_marginTop="@dimen/margin_top"
+                android:layout_marginTop="@dimen/margin"
                 />
             <TextView
                 android:text="@string/created"
@@ -101,7 +100,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 style="@style/TextAppearance.AppCompat.Medium"
-                android:layout_marginTop="@dimen/margin_top"
+                android:layout_marginTop="@dimen/margin"
                 />
         </LinearLayout>
     </androidx.cardview.widget.CardView>

@@ -18,5 +18,9 @@
         android:id="@+id/rickAndMortyCharactersDetailsFragment"
         android:name="tech.danielwaiguru.androidarchitecturecomponents.ui.details.RickAndMortyCharactersDetailsFragment"
         android:label="fragment_rick_and_morty_characters_details"
-        tools:layout="@layout/fragment_rick_and_morty_characters_details" />
+        tools:layout="@layout/fragment_rick_and_morty_characters_details" >
+        <argument
+            android:name="character"
+            app:argType="tech.danielwaiguru.androidarchitecturecomponents.models.Character" />
+    </fragment>
 </navigation>

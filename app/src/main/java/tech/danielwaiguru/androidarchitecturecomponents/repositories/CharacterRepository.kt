@@ -2,7 +2,7 @@ package tech.danielwaiguru.androidarchitecturecomponents.repositories
 
 import android.util.Log
 import androidx.lifecycle.LiveData
-import tech.danielwaiguru.androidarchitecturecomponents.CharacterDao
+import tech.danielwaiguru.androidarchitecturecomponents.database.CharacterDao
 import tech.danielwaiguru.androidarchitecturecomponents.models.Character
 import tech.danielwaiguru.androidarchitecturecomponents.models.Success
 import tech.danielwaiguru.androidarchitecturecomponents.networking.RemoteDataSource

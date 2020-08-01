@@ -11,7 +11,7 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Converter
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
-import tech.danielwaiguru.androidarchitecturecomponents.CharacterDao
+import tech.danielwaiguru.androidarchitecturecomponents.database.CharacterDao
 import tech.danielwaiguru.androidarchitecturecomponents.database.CharacterDatabase
 import tech.danielwaiguru.androidarchitecturecomponents.networking.ApiService
 import tech.danielwaiguru.androidarchitecturecomponents.networking.RemoteDataSource
@@ -60,7 +60,8 @@ object NetworkingModule {
     @Provides
     @Singleton
     fun repository(remoteDataSource: RemoteDataSourceImpl,
-    localDataSource: CharacterDao): CharacterRepository =
+    localDataSource: CharacterDao
+    ): CharacterRepository =
         CharacterRepository(remoteDataSource, localDataSource)
 
 }

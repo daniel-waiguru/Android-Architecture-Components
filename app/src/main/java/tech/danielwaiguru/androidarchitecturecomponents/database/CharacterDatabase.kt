@@ -4,8 +4,6 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import dagger.hilt.android.qualifiers.ApplicationContext
-import tech.danielwaiguru.androidarchitecturecomponents.CharacterDao
 import tech.danielwaiguru.androidarchitecturecomponents.models.Character
 
 @Database(entities = [Character::class], version = 1, exportSchema = false)

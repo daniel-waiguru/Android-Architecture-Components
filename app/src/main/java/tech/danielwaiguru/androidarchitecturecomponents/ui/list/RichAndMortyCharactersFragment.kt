@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.Observer
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.fragment_rich_and_morty_characters.*
@@ -47,10 +48,18 @@ class RichAndMortyCharactersFragment : Fragment(), CharacterAdapter.CharacterIte
     }
 
     override fun onCharacterItemClicked(character: Character) {
-        TODO("Not yet implemented")
+        initCharacterDetailsFragment(character)
     }
+    //configure recyclerview
     private fun setupRecyclerView(){
         charactersRecyclerView.layoutManager = LinearLayoutManager(requireContext())
         charactersRecyclerView.adapter = characterAdapter
+    }
+    private fun initCharacterDetailsFragment(character: Character){
+        view?.let {
+            val action = RichAndMortyCharactersFragmentDirections
+                .actionRichAndMortyCharactersFragmentToRickAndMortyCharactersDetailsFragment(character)
+            it.findNavController().navigate(action)
+        }
     }
 }
