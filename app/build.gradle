@@ -95,4 +95,6 @@ dependencies {
     implementation "com.squareup.okhttp3:okhttp:$okhttp_version"
     //Logging interceptor
     implementation "com.squareup.okhttp3:logging-interceptor:$logging_version"
+    //Circular ImageView
+    implementation 'com.mikhaellopez:circularimageview:4.2.0'
 }
