@@ -1,10 +1,8 @@
 package tech.danielwaiguru.androidarchitecturecomponents.ui.list
 
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -60,6 +58,20 @@ class RichAndMortyCharactersFragment : Fragment(), CharacterAdapter.CharacterIte
             val action = RichAndMortyCharactersFragmentDirections
                 .actionRichAndMortyCharactersFragmentToRickAndMortyCharactersDetailsFragment(character)
             it.findNavController().navigate(action)
+        }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.main_menu, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when(item.itemId){
+            R.id.action_clear -> {
+                characterViewModel.clearCharacters()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
         }
     }
 }

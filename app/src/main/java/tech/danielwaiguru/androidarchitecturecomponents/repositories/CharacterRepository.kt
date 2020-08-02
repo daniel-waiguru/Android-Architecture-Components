@@ -24,4 +24,7 @@ class CharacterRepository @Inject constructor(
             Log.d("API", "Server Error")
         }
     }
+    suspend fun clearCharacters(){
+        localDataSource.clearCharacters()
+    }
 }

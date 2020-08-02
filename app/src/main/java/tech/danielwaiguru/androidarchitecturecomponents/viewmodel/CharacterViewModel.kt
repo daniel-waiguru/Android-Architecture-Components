@@ -13,4 +13,7 @@ class CharacterViewModel
     fun fetchData() = viewModelScope.launch {
         characterRepository.fetchCharacters()
     }
+    fun clearCharacters() = viewModelScope.launch {
+        characterRepository.clearCharacters()
+    }
 }
