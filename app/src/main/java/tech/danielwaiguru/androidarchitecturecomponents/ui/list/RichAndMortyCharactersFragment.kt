@@ -25,7 +25,7 @@ class RichAndMortyCharactersFragment : Fragment(), CharacterAdapter.CharacterIte
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         characterViewModel.fetchData()
-
+        setHasOptionsMenu(true)
     }
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
