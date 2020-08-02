@@ -9,4 +9,6 @@
     <string name="gender">Gender</string>
     <string name="created">Created</string>
     <string name="clear_database">Clear database</string>
+    <string name="channel_id">1</string>
+    <string name="channel_name">worker</string>
 </resources>
