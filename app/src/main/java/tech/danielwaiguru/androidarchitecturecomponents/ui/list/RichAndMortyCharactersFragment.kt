@@ -3,6 +3,7 @@ package tech.danielwaiguru.androidarchitecturecomponents.ui.list
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -16,8 +17,7 @@ import javax.inject.Inject
 
 @AndroidEntryPoint
 class RichAndMortyCharactersFragment : Fragment(), CharacterAdapter.CharacterItemListener {
-    @Inject
-    lateinit var characterViewModel: CharacterViewModel
+    private val characterViewModel: CharacterViewModel by viewModels()
     private val characterAdapter by lazy {
         CharacterAdapter(this)
     }

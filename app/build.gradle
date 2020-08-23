@@ -100,4 +100,7 @@ dependencies {
     implementation "com.squareup.okhttp3:logging-interceptor:$logging_version"
     //Circular ImageView
     implementation 'com.mikhaellopez:circularimageview:4.2.0'
+    implementation 'androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha02'
+    // When using Kotlin.
+    kapt 'androidx.hilt:hilt-compiler:1.0.0-alpha02'
 }
